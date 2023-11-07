@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game đoán số | Kmin Academy</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <main>
+    <h1>Game đoán số</h1>
+    <div class="wrapper">
+      <p>
+        Mình đang giữ một con số bí mật trong đoạn từ
+        <span id="start"></span> đến <span id="end"></span>.
+        <br>
+        Bạn hãy đoán xem mình đang giữ số nào?
+      </p>
+
+      <input class="wrapper__input" type="number" id="number" placeholder="Nhập số" />
+      <p>Bạn còn <span id="count">3</span> lần đoán</p>
+      <button id="btn-guess" class="wrapper__button" onclick="check()">Dự đoán</button>
+      <button id="btn-reset" class="wrapper__button" onclick="reset()">Chơi lại</button>
+      <p id="result"></p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <img class="footer__logo" src="img/kmin-logo.png" alt="KMIN logo" />
+  </footer>
+</body>
+<script src="./index.js"></script>
+
+</html>
